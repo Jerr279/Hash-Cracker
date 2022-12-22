@@ -1,7 +1,16 @@
 import hashlib
 import sys
+import subprocess
 import pyfiglet
-# If the program does not work try installing pyfiglet
+
+# implement pip as a subprocess:
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'pyfiglet', ])
+
+# implement pip as a subprocess:
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'hashlib', ])
+
 ascii_banner = pyfiglet.figlet_format("HASH_CRACKER")
 ascii_ERROR = pyfiglet.figlet_format("ERROR")
 print(ascii_banner)
