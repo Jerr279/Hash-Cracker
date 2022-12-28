@@ -6,8 +6,7 @@ import pyfiglet
 # implement pip as a subprocess:
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
 'pyfiglet', ])
-
-# implement pip as a subprocess:
+#installing hashlib
 subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
 'hashlib', ])
 
